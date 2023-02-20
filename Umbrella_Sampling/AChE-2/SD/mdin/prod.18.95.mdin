@@ -1,0 +1,15 @@
+ umbrella sampling 
+ &cntrl
+  imin=0, irest=1, ntx=5, ntb=1, ntp=0,
+  tempi=300.0, temp0=300.0, ntt=1, tautp=10.0,
+  nstlim=2500000, DT=0.002, ntpr=1000, ntwx=10000, ntwr=2500000, ntwe=0,
+  NTC=2, NTF=2, cut=10, ioutfm=1, iwrap=1, nmropt=1,
+ &end
+ &wt
+  type='DUMPFREQ', istep1=1,
+ &end
+ &wt
+  type="END",
+ &end
+ DISANG=./RST/d.18.95.RST
+ DUMPAVE=./d/v.18.95.pro
