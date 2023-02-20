@@ -1,9 +1,0 @@
-# 02/18/23 15:48:44
-# Args:  ../3ache_disulf_new_w.top
-# Loaded topologies:
-#   ../3ache_disulf_new_w.top
-trajin 3ache_disulf_new_2_6ns.nc
-strip @8362,8361,8359,8358,8357,8353,8355,8356,8354
-trajout disulf_tma_pas.nc
-run
-quit
