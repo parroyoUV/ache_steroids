@@ -1,0 +1,10 @@
+# 02/18/23 14:24:21
+# Args:  ../3ache_new_w.parm7
+# Loaded topologies:
+#   ../3ache_new_w.parm7
+trajin 3ache_new_2_6ns.nc
+strip @8362,8361,8359,8358,8357,8353,8355,8356,8354
+trajout ache_sd_tma.nc
+trajout ache_sd_tma.crd
+run
+quit
