@@ -1,0 +1,30 @@
+# 02/18/23 15:36:38
+# Args:  ../3ache_disulf_new_w.top
+# Loaded topologies:
+#   ../3ache_disulf_new_w.top
+trajin 3ache_disulf_new_7_6ns.rst7
+trajout 3ache_disulf_new_7_6ns.pdb
+run
+# 02/18/23 15:37:12
+# Args:  ../3ache_disulf_new_w.top
+# Loaded topologies:
+#   ../3ache_disulf_new_w.top
+trajin 3ache_disulf_new_7_6ns.rst7
+strip !:LIG
+trajout disulf.mol2
+run
+quit
+# 02/18/23 15:42:29
+# Args:  ../3ache_disulf_new_w.top
+# Loaded topologies:
+#   ../3ache_disulf_new_w.top
+trajin 3ache_disulf_new_7_6ns.nc
+# 02/18/23 15:42:49
+# Args:  ../3ache_disulf_new_w.top
+# Loaded topologies:
+#   ../3ache_disulf_new_w.top
+trajin 3ache_disulf_new_7_6ns.nc
+strip @8362,8361,8359,8358,8357,8353,8355,8356,8354
+trajout disulf_tma_bd.nc
+run
+quit
