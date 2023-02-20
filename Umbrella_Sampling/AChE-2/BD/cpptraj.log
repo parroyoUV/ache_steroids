@@ -1,0 +1,42 @@
+# 02/18/23 14:50:14
+# Args:  ../3ache_diol_new_w.top
+# Loaded topologies:
+#   ../3ache_diol_new_w.top
+trajin 3ache_diol_new_1_6ns.rst7
+trajout 3ache_diol_new_1_6ns.pdb
+run
+quit
+# 02/18/23 14:51:44
+# Args:  ../3ache_diol_new_w.top
+# Loaded topologies:
+#   ../3ache_diol_new_w.top
+trajin 3ache_diol_new_1_6ns.rst7
+strip !:DIO
+trajout dio.mol2
+run
+quit
+# 02/18/23 15:12:48
+# Args:  ../3ache_diol_new_w.top
+# Loaded topologies:
+#   ../3ache_diol_new_w.top
+trajin 3ache_diol_new_1_6ns.rst7
+strip @8362,8361,8359,8358,8357,8353,8355,8356,8354
+trajout 3ache_diol_new_1_6ns_strip.rst7
+run
+quit
+# 02/18/23 15:14:23
+# Args:  ../3ache_diol_new_w.top
+# Loaded topologies:
+#   ../3ache_diol_new_w.top
+trajin 3ache_diol_new_1_6ns.nc
+strip @8362,8361,8359,8358,8357,8353,8355,8356,8354
+trajout diol_tma_bd.nc
+trajout diol_tma_bd.crd
+run
+quit
+# 02/18/23 15:27:43
+# Args:  ../3ache_diol_new_w.top
+# Loaded topologies:
+#   ../3ache_diol_new_w.top
+trajin 3ache_diol_new_1_6ns.nc
+strip @8362,8361,8359,8358,8357,8353,8355,8356,8354
