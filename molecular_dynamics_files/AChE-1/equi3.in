@@ -1,0 +1,11 @@
+Constant temperature, constant pressure (ntb=2) with isotropic position scaling (ntp=1) 
+ &cntrl
+   imin=0,irest=1,ntx=7,
+   ntb=2,iwrap=0,ntp=1,
+   NSTLIM=200000, DT=.002,
+   NTC=2,NTF=2,nrespa=1,
+   ntt=1,temp0=300,tautp=2.0
+   ntpr=1000,ntwx=1000,ntwv=0,ntwe=100,
+   nmropt=0,jar=0,
+   cut = 10
+ &end

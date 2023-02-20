@@ -1,0 +1,11 @@
+Termalizacion, constant volume (ntb=1) and no pressure control (ntp=0)
+ &cntrl
+  imin=0,irest=0,ntx=7,
+  ntb=1,iwrap=0,ntp=0,
+  NSTLIM= 200000, DT=.002,
+  NTC=2,NTF=2,nrespa=1,
+  ntt=1,temp0=300.0,tautp=2.0,tempi=200.0
+  ntpr=1000,ntwx=1000,ntwv=0,ntwe=100,
+  nmropt=0,jar=0,
+  cut = 10
+ &end							  

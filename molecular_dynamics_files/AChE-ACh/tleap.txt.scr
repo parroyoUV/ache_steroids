@@ -1,0 +1,27 @@
+source /opt/amber12/dat/leap/cmd/oldff/leaprc.ff99
+source /opt/amber12/dat/leap/cmd/leaprc.gaff
+source newtypes.log
+parm98 = loadAmberParams parm99.dat
+
+#loadamberprep disulf7.prepin
+loadamberprep pipe.prepi
+#loadamberparams disulf7.frcmod
+loadamberparams pipe.frcmod
+
+p=loadpdb ace_pipe_c1.pdb
+
+bond p.64.SG p.91.SG
+bond p.251.SG p.262.SG
+bond p.399.SG p.518.SG
+
+saveamberparm p pipe_ache_c1_OK.top pipe_ache_c1_OK.rst
+savepdb p pipe_ache_c1_OK.pdb
+
+addions p Na+ 0
+
+solvateOct p TIP3PBOX 10.0
+
+saveAmberParm p pipe_ache_c1_OK_w.top pipe_ache_c1_OK_w.rst
+savepdb p pipe_ache_c1_OK_w.pdb
+quit
+

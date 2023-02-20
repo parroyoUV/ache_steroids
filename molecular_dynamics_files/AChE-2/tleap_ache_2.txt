@@ -1,0 +1,20 @@
+source newtypes.log
+source leaprc.gaff
+parm98 = loadAmberParams parm99.dat
+#loadamberprep ach.prepi
+#loadamberparams ach.frcmod
+loadamberprep compound_2.prepi
+loadamberparams compound_2.frcmod
+ache=loadpdb para_tleap_ache_2.pdb
+bond ache.67.SG ache.94.SG
+bond ache.254.SG ache.265.SG
+bond ache.402.SG ache.521.SG
+addions ache Na+ 0
+saveamberparm ache ache_2.top ache_2.rst
+savepdb ache ache_2.pdb 
+solvateOct ache TIP3PBOX 10.0
+saveAmberParm ache ache_2_w.top ache_2_w.rst 
+savepdb ache ache_2_w.pdb 
+quit
+
+

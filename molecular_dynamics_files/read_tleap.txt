@@ -1,0 +1,4 @@
+disulfure bonds numering
+
+The position numbers related to these bonds in the tleap script were taken from TcAChE.
+The PDB files for these folders were obtained from tleap, so the first 3 amino acids were omitted.
