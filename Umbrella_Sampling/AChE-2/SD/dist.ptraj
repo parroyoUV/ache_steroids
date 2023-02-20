@@ -1,0 +1,3 @@
+
+trajin diol_tma_sd.nc
+distance dist :TMA@N1 :438 out dist.txt
